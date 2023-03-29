@@ -1,8 +1,8 @@
 import "./App.css";
-import  { useState, MouseEvent } from "react";
+import { useState, MouseEvent } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState, AppDispatch } from "./redux/store";
-import { addTodo, removeTodo, setTodoStatus} from "./redux/todoSlice";
+import { addTodo, removeTodo, setTodoStatus } from "./redux/todoSlice";
 
 import {
   Container,
@@ -78,7 +78,7 @@ function App() {
         </Button>
       </Stack>
       <Snackbar
-        sx={{ position: "absolute", top: "180px", marginLeft: "100px" }}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
         open={error}
         autoHideDuration={1000}
         onClose={handleCloseError}
@@ -93,7 +93,7 @@ function App() {
         </Stack>
       </Snackbar>
       <Snackbar
-        sx={{ position: "absolute", top: "180px", marginLeft: "100px" }}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
         open={success}
         autoHideDuration={1000}
         onClose={handleCloseSuccess}
@@ -108,7 +108,7 @@ function App() {
         </Stack>
       </Snackbar>
       <Snackbar
-        sx={{ position: "absolute", top: "180px", marginLeft: "100px" }}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
         open={remove}
         autoHideDuration={1000}
         onClose={handleCloseRemove}

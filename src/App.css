@@ -1,0 +1,7 @@
+.removebtn{
+    transition: background 0.3s ease-in-out !important;
+}
+.removebtn:hover{
+    background: red !important;
+    color: white;
+}
